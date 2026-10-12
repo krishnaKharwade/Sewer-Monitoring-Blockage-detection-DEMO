@@ -65,6 +65,6 @@ python -m http.server 8000 --directory dist
 
 Open http://localhost:8000. Node.js is needed only to run the core tests.
 
-## GitHub export limits
+## Included data
 
-The detailed `dist/data/chennai-sewer-subset.json` infrastructure dataset and original KMZ are omitted from this export. Manual predictions, synthetic scenarios, and CSV assessments remain available. The combined Chennai source explorer requires the omitted dataset; it shows an unavailable-source notice without it. The full test suite includes an asset-data test that requires that JSON file. Seven tests passed against the deployed source before export.
+The processed Chennai sewer subset, rainfall inputs, and source code dictionary are included. The original sewer KMZ can be downloaded as described above and is not bundled in this repository. All seven core tests pass with the included data.
